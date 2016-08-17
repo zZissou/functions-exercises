@@ -118,7 +118,7 @@ function pythagoreanTheorem(a, b) {
 }
 
 var result = pythagoreanTheorem(3, 4);
-conosle.log(result);
+console.log(result);
 // should display 5;
 ```
 
