@@ -1,12 +1,23 @@
-## Exercises - Javascript Functions
+# Training - Javascript Functions
 
-Fork this repository to your GitHub account, then clone your GitHub copy onto your computer.
+Fork this repository to your GitHub account, then clone your GitHub copy onto your computer. Write the functions assigned below in the file `functions.js`. Use snippets to run and observe the results of your code.
 
-You'll be filling in a bunch of empty function definitions. Type each function definition into the snippet, then add the rest of the code to make the function work.
+## Setup
+
+Here's how to use a snippet:
+
+1. Open the Chrome Developer Console (Option + Command + I)
+1. Navigate to the `Sources` tab in the Chrome Developer Console.
+2. Click on the `Snippets` tab within the Sources display.
+3. Right-click and choose `New` to create a new Snippets file.
+4. Name the Snippets File `myFunctions`.
+4. Write or paste code into the editing window and press `cmd` + `return` to run the code.
+
+You'll be filling in a bunch of empty function definitions. Type each blank function definition into the snippet, then **you write** the rest of the code to make the function work.
 
 After you implement a function successfully in your snippet, copy it over into the `functions.js` file.  Unless a different behavior is specified, have the function log the answer to the console AND return it.
 
-When class ends, push your work to GitHub and open a pull request to the class functions-exercises repo!
+Notice there is a solutions.js file. Make a full attempt at finishing these on your own and refer to the solutions only when you are finished or unbearably stuck. Also recognize that the solutions are only **one** solution and that there are many good ways to solve these problems.
 
 For some of the problems, you'll have to use functions or other variables supplied by JavaScript's built-in `Math` object.  [Here is the documentation on using the `Math` object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
 
@@ -22,6 +33,14 @@ For some of the problems, you'll have to use functions or other variables suppli
 	// evaluates to 1
 ```
 
+
+## Deliverable
+
+When you wrap up work, edit this README to include your name, a link to the original repository, and a 3-5 sentence reflection on completing this assignment. Example:
+
+> I was a able to complete all of the mathematical functions, but the string related functions were difficult for me. I spoke with the evening TA and she helped me solve the ASCII triangle function. I'm still feeling iffy on writing my own loops.
+
+Push your updates to GitHub and add a link to the repo to the "My Work" section of your website!
 
 ## Function Definitions!
 
@@ -62,7 +81,7 @@ repeatPhrase("Hello", 5);
 Return number <sup>power</sup> *without* using built-in `Math` functions
 
 **Example**:   
-**4<sup>5</sup> = 4 * 4 * 4 * 4 * 4 = 1024**
+**4<sup>5</sup> = 4 \* 4 \* 4 \* 4 \* 4 = 1024**
 
 ```javascript
 function toTheNthPower(number, power) {
@@ -99,7 +118,7 @@ function pythagoreanTheorem(a, b) {
 }
 
 var result = pythagoreanTheorem(3, 4);
-conosle.log(result);
+console.log(result);
 // should display 5;
 ```
 
@@ -135,9 +154,25 @@ console.log(result);
 ```
 *Challenge: Can you alter the code to count both upper case AND lower case?*
 
+### 8. Does the array contain "wdi"
+Given an array, return `true` if it contains the string "wdi" and `false` if it does not contain that string.
 
+Example:
 
-### 8. Build an ASCII Triangle!
+```javascript
+findWdi([9,'Bart Simpson', true, 'wdi']) // returns true
+findWdi(['a','b','c']) // returns false
+```
+
+```javascript
+
+	function findWdi(arr){
+		// TODO: Place your code here
+	}
+
+```
+
+### 9. Build an ASCII Triangle!
 Display a simple triangle with asterisks
 
 **Example:   
@@ -163,7 +198,7 @@ printTriangle(3);
 // ***
 ```
 
-### 9. Stretch Challenge: Can you alter the printTriangle function to create a Pyramid?
+### 10. Stretch Challenge: Can you alter the printTriangle function to create a Pyramid?
 **Example:  printPyramid(10);**
 
 ```javascript
